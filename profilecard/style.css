@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    background-image: url(x.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 400px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.card-header{
+    background-color:rgba(110, 110, 126, 0.45);
+    padding:60px 40px ;
+}
+.photo img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+   
+}
+.photo{
+    display: inline-block;
+    padding: 7px;
+    background:linear-gradient(130deg,#0c2d4e,#e88138);
+    margin: auto;
+    border-radius: 50%;
+    animation:animasyon 2s linear infinite;
+    background-size: 200% 200%;
+    text-align: center; /* Resmi yatayda ortala */
+
+}
+
+@keyframes animasyon{
+    25%{
+        background-position: left bottom;
+    }
+    50%{
+        background-position: right bottom;
+    }
+    75%{
+        background-position: right top;
+    }
+    100%{
+        background-position: left top;
+    }
+}
+.box h2{
+    color: #f2f2f2;
+    font-size: 28px;
+    font-weight: 600;
+    margin:10px 0;
+}
+
+.box h3{
+    color: #eda548;
+}
+.sosyal_medya{
+    display: inline-flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.sosyal_medya a{
+    color: #f2f2f2;
+    width: 56px;
+    font-size: 22px;
+    padding: 13px;
+    transition: .3s linear;
+}
+.sosyal_medya a:hover{
+    color:#eda548;
+}
+
+.contact-btn{
+    display: inline-block;
+    padding: 12px 50px;
+    color: #eda548;
+    border: 2px solid #f2f2f2;
+    border-radius:6px;
+    margin-top: 13px;
+    font-size: 17px;
+
+}
+.contact-btn:hover{
+    background: #e28341;
+    color: #f2f2f2;
+    transition: .3s linear;
+
+}
